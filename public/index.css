@@ -1,0 +1,9 @@
+/* Product Sans Font */
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+/* Define html & body */
+html,
+body {
+    font-family: 'Gilroy-Medium', sans-serif;
+    box-sizing: border-box;
+}
