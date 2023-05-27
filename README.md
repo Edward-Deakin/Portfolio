@@ -8,4 +8,4 @@
 ![Image](https://i.ibb.co/dfV1sPr/Web-capture-27-5-2023-181021-localhost.jpg)
 
 Thank you for viewing the GitHub page for my Bulma Porfolio!
-You can use this website without any attribution, but you will need to put in a [Font Awesome Kit CDN](https://fontawesome.com/v5/docs/web/setup/get-started) for icons to work.
+You can use this website without any attribution, but you will need to put in a [Font Awesome Kit CDN](https://fontawesome.com/v5/docs/web/setup/get-started) for icons to work. Put the CDN where <%- include ('./partials/fontawesome.ejs'); %> is located in <head>.
