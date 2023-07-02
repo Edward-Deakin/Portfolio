@@ -4,22 +4,12 @@
 <head>
     <title>Edward Deakin</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/b855b973a7.js" crossorigin="anonymous"></script>
+    <script src="scripts/modal.js"></script>
+    <script src="scripts/time.js"></script>
 </head>
-<script>
-    function displayTime() {
-        var date = new Date();
-        var time = date.toLocaleTimeString("en-GB", {
-            timeZone: "Europe/London"
-        });
-        var currentTime = "Current Time: " + time;
-        document.getElementById('current-time').innerHTML = currentTime;
-    }
-
-    setInterval(displayTime, 1000); // Update every second
-</script>
 
 <body>
     <section class="section">
@@ -33,22 +23,23 @@
             <p id="current-time" class="subtitle has-text-centered is-size-3-desktop is-size-3-mobile">Loading Time...
             </p>
             <div class="buttons is-centered">
-                <a class="button is-primary is-medium" href="/EdwardDeakin'sCV.pdf" target="_blank">
+                <a class="button is-primary is-medium is-responsive" href="/pdfs/EdwardDeakin'sCV.pdf" target="_blank">
                     <strong>Download CV</strong>
                 </a>
-                <a class="button is-info is-medium" href="mailto:deakinedward53@outlook.com">
+                <a class="button is-info is-medium is-responsive" href="mailto:deakinedward53@outlook.com">
                     Contact Me
                 </a>
             </div>
             <div class="buttons is-centered">
-                <a class="button is-light is-medium" href="https://discord.com/users/361479100004564995"
+                <a class="button is-light is-medium is-responsive" href="https://discord.com/users/361479100004564995"
                     target="_blank">
                     <i class="fa-brands fa-discord"></i>
                 </a>
-                <a class="button is-light is-medium" href="https://github.com/Edward-Deakin" target="_blank">
+                <a class="button is-light is-medium is-responsive" href="https://github.com/Edward-Deakin"
+                    target="_blank">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                <a class="button is-light is-medium" href="mailto:deakinedward53@outlook.com">
+                <a class="button is-light is-medium is-responsive" href="mailto:deakinedward53@outlook.com">
                     <i class="fa-solid fa-envelope"></i>
                 </a>
             </div>
@@ -93,6 +84,28 @@
         <br>
         <div class="container">
             <div class="box">
+                <h1 class="title  is-size-2-desktop is-size-2-mobile">Achievements</h1>
+                <div class="box">
+                    <p1 class="subtitle is-size-4-desktop is-size-4-mobile">
+                        <li>Completed the <a
+                                href="https://experience.springpod.com/courses/technology-on-demand">Springpod
+                                Technology Course</a>, proof of completion is <a href="pdfs/Springpod.pdf">here</a></li>
+                        <li>Completed the <a
+                                href="https://www.open.edu/openlearn/science-maths-technology/simple-coding/content-section-0?active-tab=description-tab">OpenLearn
+                                Simple Coding Course</a>, proof of completion is <a href="pdfs/Openlearn2.pdf">here</a>
+                        </li>
+                        <li>Completed the <a
+                                href="https://www.open.edu/openlearn/digital-computing/designing-the-user-interface-text-colour-images-moving-images-and-sound/content-section-0?active-tab=description-tab">OpenLearn
+                                UI Design Course</a>, proof of completion is <a href="pdfs/Openlearn1.pdf">here</a>
+                        </li>
+                    </p1>
+                </div>
+            </div>
+        </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="box">
                 <h1 class="title  is-size-2-desktop is-size-2-mobile">Testimonials</h1>
                 <div class="box">
                     <h1 class="title  is-size-3-desktop is-size-3-mobile">Ales Rechtorik <a
@@ -104,10 +117,12 @@
                     <h1 class="title  is-size-4-desktop is-size-4-mobile">Product Owner of <a
                             href="https://zerops.io/">Zerops</a></h1>
                     <p1 class="subtitle is-size-4-desktop is-size-4-mobile">
-                        Edward has demonstrated a great general knowledge about programming, good common sense, as well
+                        Edward has demonstrated a great general knowledge about programming, good common sense, as
+                        well
                         as ability to create applications beyond something I’d expect from someone of his age.<br> I
                         highly
-                        recommend him for any apprenticeship / summer job as I feel he’ll be a valuable addition to any
+                        recommend him for any apprenticeship / summer job as I feel he’ll be a valuable addition to
+                        any
                         team.
                     </p1>
                 </div>
@@ -117,9 +132,11 @@
                                 class="fa-brands fa-discord"></i></a></h1>
                     <h1 class="title  is-size-4-desktop is-size-4-mobile">Customer</h1>
                     <p1 class="subtitle is-size-4-desktop is-size-4-mobile">
-                        I highly recommend Edward Deakin for any coding related jobs.<br> He is a hard worker who never
+                        I highly recommend Edward Deakin for any coding related jobs.<br> He is a hard worker who
+                        never
                         misses a deadline and gets jobs done quickly.<br> He is also very professional, communicates
-                        instantly and is extremely helpful.<br> I am thoroughly impressed with him and he has become an
+                        instantly and is extremely helpful.<br> I am thoroughly impressed with him and he has become
+                        an
                         essential part of my server.<br> Thank you, Edward, for your dedication to customer
                         satisfaction.
                     </p1>
@@ -141,18 +158,8 @@
             </div>
         </div>
     </section>
-    <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC50XWN4WK"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'G-PC50XWN4WK');
-    </script>
+    <script src="scripts/googleAnalytics.js"></script>
 </body>
 
 </html>
