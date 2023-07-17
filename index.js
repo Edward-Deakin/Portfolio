@@ -18,6 +18,9 @@ app.use(express.static('public'));
 app.get('/', function (req, res) {
     res.render('index');
 });
+app.get('/dino', function (req, res) {
+    res.render('dino');
+})
 app.get('*', function (req, res) {
     res.render('index');
 });
