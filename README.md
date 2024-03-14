@@ -5,7 +5,7 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
 
-![Image](https://ibb.co/JBPqqsJ)
+![Image](https://i.ibb.co/kHFJJSC/localhost-3200.png)
 
 Thank you for viewing the GitHub page for my Bulma Porfolio!
 The live version of the website is located [here](https://edeakin.xyz).
