@@ -1,167 +1,300 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Edward Deakin</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-    <link rel="stylesheet" href="css/index.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/b855b973a7.js" crossorigin="anonymous"></script>
-    <script src="scripts/modal.js"></script>
+    <link rel="stylesheet" href="css/bulma.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/b855b973a7.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="scripts/time.js"></script>
-</head>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        opacity: 0;
+        transition: opacity 0.5s ease-in-out;
+      }
 
-<body>
+      html,
+      body.loaded {
+        opacity: 1;
+      }
+    </style>
+    <script>
+      window.addEventListener("DOMContentLoaded", (event) => {
+        document.body.classList.add("loaded");
+      });
+    </script>
+  </head>
+
+  <body>
     <section class="section">
-        <div class="container">
-            <h1 class="title has-text-centered">
-                Edward Deakin
-            </h1>
-            <p class="subtitle has-text-centered">
-                JavaScript Developer<br>DevRel at Zerops
-            </p>
-            <p id="current-time" class="subtitle has-text-centered">Loading Time...
-            </p>
-            <div class="buttons is-centered">
-                <a class="button is-primary is-medium is-responsive" href="/pdfs/EdwardDeakin'sCV.pdf" target="_blank">
-                    <strong><i class="fa-solid fa-file-arrow-down"></i>&nbsp;&nbsp;Download CV</strong>
-                </a>
-            </div>
-            <div class="buttons is-centered">
-                <a class="button is-light is-medium is-responsive" href="https://twitter.com/EdwardDeakin1"
-                    target="_blank">
-                    <i class="fa-brands fa-x-twitter"></i>
-                </a>
-                <a class="button is-light is-medium is-responsive" href="https://discord.com/users/361479100004564995"
-                    target="_blank">
-                    <i class="fa-brands fa-discord"></i>
-                </a>
-                <a class="button is-light is-medium is-responsive" href="https://github.com/Edward-Deakin"
-                    target="_blank">
-                    <i class="fa-brands fa-github"></i>
-                </a>
-                <a class="button is-light is-medium is-responsive" href="mailto:deakinedward53@outlook.com">
-                    <i class="fa-solid fa-envelope"></i>
-                </a>
-            </div>
-            <div class="buttons is-centered">
-                <a class="button is-light is-medium is-responsive" href="https://platformpredict.co.uk/"
-                    target="_blank">
-                    <strong>PlatformPredict</strong>
-                </a>
-            </div>
+      <div class="container is-max-desktop">
+        <div class="box">
+          <h1 class="title has-text-centered">Edward Deakin</h1>
+          <p class="subtitle has-text-centered">
+            Developer<br />
+            Creator of PlatformPredict
+          </p>
+          <p class="title is-4 has-text-centered">
+            <i class="fa-brands fa-html5"></i>
+            <i class="fa-brands fa-square-js"></i>
+            <i class="fa-brands fa-css3-alt"></i>
+          </p>
+          <br />
+          <p id="current-time" class="subtitle has-text-centered">
+            Loading Time...
+          </p>
+          <div class="buttons is-centered">
+            <a
+              class="button is-primary is-medium is-responsive"
+              href="/pdfs/EdwardDeakin'sCV.pdf"
+              target="_blank"
+            >
+              <strong
+                ><i class="fa-solid fa-file-arrow-down"></i>&nbsp;&nbsp;Download
+                CV</strong
+              >
+            </a>
+            <a
+              class="button is-light is-medium is-responsive"
+              href="https://platformpredict.co.uk/"
+              target="_blank"
+            >
+              <strong
+                ><i class="fa-solid fa-train"></i
+                >&nbsp;&nbsp;PlatformPredict</strong
+              >
+            </a>
+          </div>
+          <div class="buttons is-centered">
+            <a
+              class="button is-light is-medium is-responsive"
+              href="https://twitter.com/EdwardDeakin1"
+              target="_blank"
+            >
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a
+              class="button is-light is-medium is-responsive"
+              href="https://discord.com/users/361479100004564995"
+              target="_blank"
+            >
+              <i class="fa-brands fa-discord"></i>
+            </a>
+            <a
+              class="button is-light is-medium is-responsive"
+              href="https://github.com/Edward-Deakin"
+              target="_blank"
+            >
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a
+              class="button is-light is-medium is-responsive"
+              href="mailto:deakinedward53@outlook.com"
+            >
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
         </div>
+        <div class="box">
+          <h1 class="is-pulled-right" style="font-size: 75px">👋</h1>
+          <p class="subtitle">
+            Hello! My name is Edward Deakin.<br />
+            I am 16 years old and I live in
+            <a href="https://en.wikipedia.org/wiki/Warwickshire" target="_blank"
+              >Warwickshire, England</a
+            >.<br />
+            I have had a keen interest in all things technological since a very
+            young age.<br />
+            This was developed further after being introduced to advanced coding
+            (<a
+              href="https://dotnet.microsoft.com/en-us/apps/aspnet"
+              target="_blank"
+              >ASP.NET</a
+            >
+            in a
+            <a href="https://visualstudio.microsoft.com/" target="_blank"
+              >Visual Studio</a
+            >
+            environment) by an older
+            <a
+              href="https://sg.linkedin.com/in/harry-conor-lucas"
+              target="_blank"
+              >relative</a
+            >.
+          </p>
+        </div>
+        <div class="box">
+          <h1 class="is-pulled-right" style="font-size: 75px">💼</h1>
+          <p class="subtitle">
+            <b>Skills</b><br /><br />
+            - Two years experience with
+            <a href="https://nodejs.org/en" target="_blank">Node.JS</a>
+            applications<br />
+            - One year experience with HTML, CSS and JS projects (one being
+            <a href="https://platformpredict.co.uk/" target="_blank"
+              >PlatformPredict</a
+            >)<br />
+            - One year experience with Python projects (through personal
+            projects and school work)<br />
+            - Experience with navigating and developing with Linux
+            infrastructures
+          </p>
+        </div>
+        <div class="box">
+          <h1 class="is-pulled-right" style="font-size: 75px">🏆</h1>
+          <p class="subtitle">
+            <b>Achievements</b><br /><br />
+            - Completed Springpod's
+            <a href="pdfs/Springpod.pdf" target="_blank">Technology Course</a>
+            alongside Open University's
+            <a href="pdfs/Openlearn1.pdf" target="_blank">UI Interface</a> and
+            <a href="pdfs/Openlearn2.pdf" target="_blank">Simple Coding</a>
+            course<br />
+            - My most complex project so far,
+            <a href="https://platformpredict.co.uk/" target="_blank"
+              >PlatformPredict</a
+            >, has been used by many people and boasts roughly 1700 lines of
+            code over 3 languages<br />
+          </p>
+        </div>
+        <div class="box">
+          <p class="subtitle"><b>Testimonials</b><br /><br /></p>
+          <div class="box">
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-64x64">
+                  <img class="is-rounded" src="/images/harry.jpg" />
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong
+                      >Harry Conor Smith<br />Cofounder and CTO of
+                      <a href="https://phas.io" target="_blank"
+                        >Phasio</a
+                      ></strong
+                    >
+                    <br />
+                    <i>
+                      "As a true digital native, he is well prepared for the
+                      modern world of work which is more decentalized and
+                      technically specialized than ever before."
+                    </i>
+                  </p>
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-left">
+                    <a
+                      href="https://www.linkedin.com/in/harry-conor-lucas/"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
+          <div class="box">
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-64x64">
+                  <img class="is-rounded" src="/images/ales.jpg" />
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong
+                      >Ales Rechtorik<br />Product Owner of
+                      <a href="https://zerops.io" target="_blank"
+                        >Zerops</a
+                      ></strong
+                    >
+                    <br />
+                    <i>
+                      "Edward has demonstrated a great general knowledge about
+                      programming, good common sense, as well as ability to
+                      create applications beyond something I’d expect from
+                      someone of his age."
+                    </i>
+                  </p>
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-left">
+                    <a
+                      href="https://cz.linkedin.com/in/fxckdev/en?trk=org-employees"
+                      target="_blank"
+                      ><i class="fa-brands fa-linkedin"></i
+                    ></a>
+                    <a href="https://github.com/fxck" target="_blank"
+                      ><i class="fa-brands fa-square-github"></i
+                    ></a>
+                    <a
+                      href="https://discord.com/users/114769077624373255"
+                      target="_blank"
+                      ><i class="fa-brands fa-discord"></i
+                    ></a>
+                    <a href="https://twitter.com/fxckdev_" target="_blank"
+                      ><i class="fa-brands fa-x-twitter"></i
+                    ></a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
+          <div class="box">
+            <article class="media">
+              <figure class="media-left">
+                <p class="image is-64x64">
+                  <img class="is-rounded" src="/images/unknown.jpg" />
+                </p>
+              </figure>
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <strong>Ruben Cranmer<br />Customer</strong>
+                    <br />
+                    <i>
+                      "He is a hard worker who never misses a deadline and gets
+                      jobs done quickly."
+                    </i>
+                  </p>
+                </div>
+                <nav class="level is-mobile">
+                  <div class="level-left">
+                    <a
+                      href="https://discord.com/users/862199721585934356"
+                      target="_blank"
+                      ><i class="fa-brands fa-discord"></i
+                    ></a>
+                  </div>
+                </nav>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="box">
+          <h1 class="is-pulled-right" style="font-size: 75px">🌐</h1>
+          <p class="subtitle">
+            <b>Open Source</b><br /><br />
+            This website is open source and is available at this
+            <a href="https://github.com/Edward-Deakin/Portfolio" target="_blank"
+              >GitHub repository</a
+            >.<br />
+            Attribution is not neccesary but is appreciated.
+          </p>
+        </div>
+      </div>
     </section>
-    <section class="section">
-        <div class="container">
-            <div class="box">
-                <h1 class="title">About Me</h1>
-                <div class="box">
-                    <p1 class="subtitle">
-                        Hello! My name is Edward Deakin.<br>
-                        I am 16 years old and I live in <a href="https://en.wikipedia.org/wiki/Warwickshire"
-                            target="_blank">Warwickshire, England</a>.<br>
-                        I have had a keen interest in all things technological since a very young age.<br>
-                        This was developed further after being introduced to advanced coding (<a
-                            href="https://dotnet.microsoft.com/en-us/apps/aspnet" target="_blank">ASP.NET</a> in
-                        a <a href="https://visualstudio.microsoft.com/" target="_blank">Visual Studio</a> environment)
-                        by an older <a href="https://sg.linkedin.com/in/harry-conor-lucas" target="_blank">relative</a>.
-                    </p1>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="box">
-                <h1 class="title">Skills</h1>
-                <div class="box">
-                    <p1 class="subtitle">
-                        <li>Two years experience with <a href="https://nodejs.org/en" target="_blank">Node.JS</a>
-                            projects and environments</li>
-                        <li>One year experience with <a href="https://www.python.org/" target="_blank">Python</a>
-                            projects, classwork and <a
-                                href="https://www.raspberrypi.com/products/raspberry-pi-pico/">Raspberry Pi Pico</a>
-                            micro-controllers</li>
-                        <li>Expertise in developing interactional bots using the Discord API</li>
-                        <li>Experience with navigating and developing with Linux infrastructures</li>
-                    </p1>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="box">
-                <h1 class="title">Achievements</h1>
-                <div class="box">
-                    <p1 class="subtitle">
-                        <li>Completed Springpod's <a href="pdfs/Springpod.pdf">Technology Course</a></li>
-                        <li>Completed Open University's <a href="pdfs/Openlearn1.pdf">UI Interface</a> and <a
-                                href="pdfs/Openlearn2.pdf">Simple Coding</a> course</li>
-                    </p1>
-                </div>
-            </div>
-        </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="box">
-                <h1 class="title">Testimonials</h1>
-                <div class="box">
-                    <h1 class="title">Ales Rechtorik<br><a
-                            href="https://cz.linkedin.com/in/fxckdev/en?trk=org-employees" target="_blank"><i
-                                class="fa-brands fa-linkedin"></i></a> <a href="https://github.com/fxck"
-                            target="_blank"><i class="fa-brands fa-square-github"></i></a> <a
-                            href="https://discord.com/users/114769077624373255" target="_blank"><i
-                                class="fa-brands fa-discord"></i></a>
-                        <a href="https://twitter.com/fxckdev_" target="_blank"><i
-                                class="fa-brands fa-x-twitter"></i></a>
-                    </h1>
-                    <h1 class="title">Product Owner of <a
-                            href="https://zerops.io/">Zerops</a></h1>
-                    <p1 class="subtitle">
-                        "Edward has demonstrated a great general knowledge about programming, good common sense, as
-                        well
-                        as ability to create applications beyond something I’d expect from someone of his age.<br> I
-                        highly
-                        recommend him for any apprenticeship / summer job as I feel he’ll be a valuable addition to
-                        any
-                        team."
-                    </p1>
-                </div>
-                <div class="box">
-                    <h1 class="title">Ruben Cranmer<br><a
-                            href="https://discord.com/users/862199721585934356" target="_blank"><i
-                                class="fa-brands fa-discord"></i></a></h1>
-                    <h1 class="title">Customer</h1>
-                    <p1 class="subtitle">
-                        "I highly recommend Edward Deakin for any coding related jobs.<br> He is a hard worker who
-                        never
-                        misses a deadline and gets jobs done quickly.<br> He is also very professional, communicates
-                        instantly and is extremely helpful.<br> I am thoroughly impressed with him and he has become
-                        an
-                        essential part of my server.<br> Thank you, Edward, for your dedication to customer
-                        satisfaction."
-                    </p1>
-                </div>
-            </div>
-        </div>
-        <br>
-        <div class="container">
-            <div class="box">
-                <h1 class="title">Open-Source</h1>
-                <div class="box">
-                    <p1 class="subtitle">
-                        This website is open source and is available <a
-                            href="https://github.com/Edward-Deakin/Portfolio" target="_blank">here</a>.<br>
-                        Credit is appreciated but attribution is not necessary.<br>
-                        Instructions are provided on the GitHub page.
-                    </p1>
-                </div>
-            </div>
-        </div>
-    </section>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC50XWN4WK"></script>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-PC50XWN4WK"
+    ></script>
     <script src="scripts/googleAnalytics.js"></script>
-</body>
-
+  </body>
 </html>
