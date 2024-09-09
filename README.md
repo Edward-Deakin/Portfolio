@@ -5,7 +5,7 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![Font Awesome](https://img.shields.io/badge/Font_Awesome-339AF0?style=for-the-badge&logo=fontawesome&logoColor=white)
 
-![Image](https://edwarddeakin.uk/images/websiteScreenshot.png)
+![Image](https://edwarddeakin.uk/images/webScreenshot.png)
 
 Thank you for viewing the GitHub page for my Porfolio!
 
