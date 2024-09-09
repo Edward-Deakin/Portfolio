@@ -1,300 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Edward Deakin</title>
     <link rel="stylesheet" href="css/bulma.min.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <script
-      src="https://kit.fontawesome.com/b855b973a7.js"
-      crossorigin="anonymous"
-    ></script>
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.css" />
+    <link rel="stylesheet" href="fontawesome/css/solid.css" />
+    <link rel="stylesheet" href="fontawesome/css/brands.css" />
     <script src="scripts/time.js"></script>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        opacity: 0;
-        transition: opacity 0.5s ease-in-out;
-      }
-
-      html,
-      body.loaded {
-        opacity: 1;
-      }
-    </style>
     <script>
-      window.addEventListener("DOMContentLoaded", (event) => {
+      window.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("loaded");
       });
     </script>
   </head>
 
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PC50XWN4WK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PC50XWN4WK');
+</script>
+
   <body>
-    <section class="section">
-      <div class="container is-max-desktop">
-        <div class="box">
-          <h1 class="title has-text-centered">Edward Deakin</h1>
-          <p class="subtitle has-text-centered">
-            Developer<br />
-            Creator of PlatformPredict
-          </p>
-          <p class="title is-4 has-text-centered">
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-square-js"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-          </p>
-          <br />
-          <p id="current-time" class="subtitle has-text-centered">
-            Loading Time...
-          </p>
-          <div class="buttons is-centered">
-            <a
-              class="button is-primary is-medium is-responsive"
-              href="/pdfs/EdwardDeakin'sCV.pdf"
-              target="_blank"
-            >
-              <strong
-                ><i class="fa-solid fa-file-arrow-down"></i>&nbsp;&nbsp;Download
-                CV</strong
-              >
+    <!-- Hero Section remains unchanged -->
+    <section class="hero is-primary is-medium">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <h1 class="title">Edward Deakin</h1>
+          <p class="subtitle">Developer &middot; Creator of PlatformPredict</br>Warwickshire, England</p>
+          <p id="current-time" class="subtitle">&nbsp;</p>
+          <div class="buttons is-centered mt-4">
+            <a class="button is-info is-medium" href="/pdfs/EdwardDeakin'sCV.pdf" target="_blank">
+              <strong><i class="fa-solid fa-file-arrow-down"></i>&nbsp;Download CV</strong>
             </a>
-            <a
-              class="button is-light is-medium is-responsive"
-              href="https://platformpredict.co.uk/"
-              target="_blank"
-            >
-              <strong
-                ><i class="fa-solid fa-train"></i
-                >&nbsp;&nbsp;PlatformPredict</strong
-              >
+            <a class="button is-light is-medium" href="https://platformpredict.co.uk/" target="_blank">
+              <strong><i class="fa-solid fa-train"></i>&nbsp;PlatformPredict</strong>
             </a>
           </div>
-          <div class="buttons is-centered">
-            <a
-              class="button is-light is-medium is-responsive"
-              href="https://twitter.com/EdwardDeakin1"
-              target="_blank"
-            >
-              <i class="fa-brands fa-x-twitter"></i>
-            </a>
-            <a
-              class="button is-light is-medium is-responsive"
-              href="https://discord.com/users/361479100004564995"
-              target="_blank"
-            >
-              <i class="fa-brands fa-discord"></i>
-            </a>
-            <a
-              class="button is-light is-medium is-responsive"
-              href="https://github.com/Edward-Deakin"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a
-              class="button is-light is-medium is-responsive"
-              href="mailto:deakinedward53@outlook.com"
-            >
-              <i class="fa-solid fa-envelope"></i>
-            </a>
+          <div class="buttons is-centered mt-4">
+            <a class="button is-light is-medium" href="https://twitter.com/EdwardDeakin1" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+            <a class="button is-light is-medium" href="https://discord.com/users/361479100004564995" target="_blank"><i class="fa-brands fa-discord"></i></a>
+            <a class="button is-light is-medium" href="https://github.com/Edward-Deakin" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a class="button is-light is-medium" href="mailto:deakinedward53@outlook.com"><i class="fa-solid fa-envelope"></i></a>
           </div>
-        </div>
-        <div class="box">
-          <h1 class="is-pulled-right" style="font-size: 75px">👋</h1>
-          <p class="subtitle">
-            Hello! My name is Edward Deakin.<br />
-            I am 16 years old and I live in
-            <a href="https://en.wikipedia.org/wiki/Warwickshire" target="_blank"
-              >Warwickshire, England</a
-            >.<br />
-            I have had a keen interest in all things technological since a very
-            young age.<br />
-            This was developed further after being introduced to advanced coding
-            (<a
-              href="https://dotnet.microsoft.com/en-us/apps/aspnet"
-              target="_blank"
-              >ASP.NET</a
-            >
-            in a
-            <a href="https://visualstudio.microsoft.com/" target="_blank"
-              >Visual Studio</a
-            >
-            environment) by an older
-            <a
-              href="https://sg.linkedin.com/in/harry-conor-lucas"
-              target="_blank"
-              >relative</a
-            >.
-          </p>
-        </div>
-        <div class="box">
-          <h1 class="is-pulled-right" style="font-size: 75px">💼</h1>
-          <p class="subtitle">
-            <b>Skills</b><br /><br />
-            - Three years experience with
-            <a href="https://nodejs.org/en" target="_blank">Node.JS</a>
-            applications<br />
-            - Two years experience with HTML, CSS and JS projects (one being
-            <a href="https://platformpredict.co.uk/" target="_blank"
-              >PlatformPredict</a
-            >)<br />
-            - Two years experience with Python projects (through personal
-            projects and school work)<br />
-            - Experience with navigating and developing with Linux
-            infrastructures
-          </p>
-        </div>
-        <div class="box">
-          <h1 class="is-pulled-right" style="font-size: 75px">🏆</h1>
-          <p class="subtitle">
-            <b>Achievements</b><br /><br />
-            - Completed Springpod's
-            <a href="pdfs/Springpod.pdf" target="_blank">Technology Course</a>
-            alongside Open University's
-            <a href="pdfs/Openlearn1.pdf" target="_blank">UI Interface</a> and
-            <a href="pdfs/Openlearn2.pdf" target="_blank">Simple Coding</a>
-            course<br />
-            - My most complex project so far,
-            <a href="https://platformpredict.co.uk/" target="_blank"
-              >PlatformPredict</a
-            >, has been used by many people and boasts roughly 1700 lines of
-            code over 3 languages<br />
-          </p>
-        </div>
-        <div class="box">
-          <p class="subtitle"><b>Testimonials</b><br /><br /></p>
-          <div class="box">
-            <article class="media">
-              <figure class="media-left">
-                <p class="image is-64x64">
-                  <img class="is-rounded" src="/images/harry.jpg" />
-                </p>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong
-                      >Harry Conor Lucas<br />Cofounder and CTO of
-                      <a href="https://phas.io" target="_blank"
-                        >Phasio</a
-                      ></strong
-                    >
-                    <br />
-                    <i>
-                      "As a true digital native, he is well prepared for the
-                      modern world of work which is more decentalized and
-                      technically specialized than ever before."
-                    </i>
-                  </p>
-                </div>
-                <nav class="level is-mobile">
-                  <div class="level-left">
-                    <a
-                      href="https://www.linkedin.com/in/harry-conor-lucas/"
-                      target="_blank"
-                      ><i class="fa-brands fa-linkedin"></i
-                    ></a>
-                  </div>
-                </nav>
-              </div>
-            </article>
-          </div>
-          <div class="box">
-            <article class="media">
-              <figure class="media-left">
-                <p class="image is-64x64">
-                  <img class="is-rounded" src="/images/ales.jpg" />
-                </p>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong
-                      >Ales Rechtorik<br />Product Owner of
-                      <a href="https://zerops.io" target="_blank"
-                        >Zerops</a
-                      ></strong
-                    >
-                    <br />
-                    <i>
-                      "Edward has demonstrated a great general knowledge about
-                      programming, good common sense, as well as ability to
-                      create applications beyond something I’d expect from
-                      someone of his age."
-                    </i>
-                  </p>
-                </div>
-                <nav class="level is-mobile">
-                  <div class="level-left">
-                    <a
-                      href="https://cz.linkedin.com/in/fxckdev/en?trk=org-employees"
-                      target="_blank"
-                      ><i class="fa-brands fa-linkedin"></i
-                    ></a>
-                    <a href="https://github.com/fxck" target="_blank"
-                      ><i class="fa-brands fa-square-github"></i
-                    ></a>
-                    <a
-                      href="https://discord.com/users/114769077624373255"
-                      target="_blank"
-                      ><i class="fa-brands fa-discord"></i
-                    ></a>
-                    <a href="https://twitter.com/fxckdev_" target="_blank"
-                      ><i class="fa-brands fa-x-twitter"></i
-                    ></a>
-                  </div>
-                </nav>
-              </div>
-            </article>
-          </div>
-          <div class="box">
-            <article class="media">
-              <figure class="media-left">
-                <p class="image is-64x64">
-                  <img class="is-rounded" src="/images/unknown.jpg" />
-                </p>
-              </figure>
-              <div class="media-content">
-                <div class="content">
-                  <p>
-                    <strong>Ruben Cranmer<br />Customer</strong>
-                    <br />
-                    <i>
-                      "He is a hard worker who never misses a deadline and gets
-                      jobs done quickly."
-                    </i>
-                  </p>
-                </div>
-                <nav class="level is-mobile">
-                  <div class="level-left">
-                    <a
-                      href="https://discord.com/users/862199721585934356"
-                      target="_blank"
-                      ><i class="fa-brands fa-discord"></i
-                    ></a>
-                  </div>
-                </nav>
-              </div>
-            </article>
-          </div>
-        </div>
-        <div class="box">
-          <h1 class="is-pulled-right" style="font-size: 75px">🌐</h1>
-          <p class="subtitle">
-            <b>Open Source</b><br /><br />
-            This website is open source and is available at this
-            <a href="https://github.com/Edward-Deakin/Portfolio" target="_blank"
-              >GitHub repository</a
-            >.<br />
-            Attribution is not neccesary but is appreciated.
-          </p>
         </div>
       </div>
     </section>
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-PC50XWN4WK"
-    ></script>
-    <script src="scripts/googleAnalytics.js"></script>
+
+    <!-- About Me Section -->
+    <section class="section">
+      <div class="container">
+        <div class="columns is-multiline">
+          <div class="column is-full">
+              <p class="title has-text-centered">About Me</p></br>
+              <p class="subtitle betterParagraphs">
+                I've always been passionate about technology and programming since a young age. My journey started with ASP.NET in Visual Studio, thanks to the guidance of my older <a href="https://www.linkedin.com/in/harry-conor-lucas/">relative</a>.
+                Today, I aspire to become a software engineer at a startup, where I can build impactful software that improves people's lives.
+              </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section has-background-grey">
+      <div class="container">
+        <h2 class="title is-4 has-text-centered">My Skills</h2>
+        <div class="columns is-multiline is-justify-content-center">
+          <div class="column is-one-quarter">
+            <div class="box has-text-centered">
+              <i class="fa-brands fa-js-square fa-3x"></i>
+              <p class="subtitle mt-3">JavaScript</p>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="box has-text-centered">
+              <i class="fa-brands fa-python fa-3x"></i>
+              <p class="subtitle mt-3">Python</p>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="box has-text-centered">
+              <i class="fa-brands fa-html5 fa-3x"></i>
+              <p class="subtitle mt-3">HTML</p>
+            </div>
+          </div>
+          <div class="column is-one-quarter">
+            <div class="box has-text-centered">
+              <i class="fa-brands fa-css3-alt fa-3x"></i>
+              <p class="subtitle mt-3">CSS</p>
+            </div>
+          </div>
+        </div></br>
+        <div class="columns is-multiline is-justify-content-center"></div>
+          <div class="column is-one-half">
+            <div class="box has-text-centered">
+              <i class="fa-brands fa-linux fa-3x"></i>
+              <p class="subtitle mt-3">Experience navigating and developing on Linux infrastructure</p>
+            </div>
+          </div>
+          <div class="column is-one-half">
+            <div class="box has-text-centered">
+              <i class="fa-solid fa-warehouse fa-3x"></i>
+              <p class="subtitle mt-3">Warehouse/office experience including using SAP</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="section">
+      <div class="container">
+        <h2 class="title is-4 has-text-centered">Achievements</h2></br>
+        <p class="subtitle betterParagraphs">
+          Completed Springpod's Technology course and Open University's UI Interface course and Simple Coding course.</br></br>
+          Developed a train journey planning tool called <a href="https://platformpredict.co.uk/" target="_blank">PlatformPredict</a> boasting around 1700 lines of code over three languages and is used by many.
+        </p>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section has-background-grey">
+      <div class="container">
+        <h2 class="title is-4 has-text-centered">Testimonials</h2>
+        <div class="box">
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-64x64">
+                <img src="/images/harry.jpg" />
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Harry Lucas</strong><br/><small><strong>Cofounder and CTO of <a href="https://phas.io" target="_blank">Phasio</a></strong></small>
+                  <br />
+                  As a true digital native, he is well prepared for the modern world of work which is more decentalized and technically specialized than ever before.
+                </p>
+              </div>
+              <nav class="level is-mobile">
+                <div class="level-left">
+                  <a href="https://www.linkedin.com/in/harry-conor-lucas/" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                </div>
+              </nav>
+            </div>
+          </article>
+        </div>
+        <div class="box">
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-64x64">
+                <img src="/images/ales.jpg" />
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Ales Rechtorik</strong><br/><small><strong>Product Owner of <a href="https://zerops.io/" target="_blank">Zerops</a></strong></small>
+                  <br />
+                  Edward has demonstrated excellent general knowledge about programming and good common sense, as well as the ability to create applications beyond what I would expect from someone of his age.
+                </p>
+              </div>
+              <nav class="level is-mobile">
+                <div class="level-left">
+                  <a href="https://cz.linkedin.com/in/fxckdev/en?trk=org-employees" target="_blank"><i class="fa-brands fa-linkedin" aria-hidden="true"></i></a>
+                  <a href="https://github.com/fxck" target="_blank"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                  <a href="https://discord.com/users/114769077624373255" target="_blank"><i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+                  <a href="https://x.com/fxckdev_" target="_blank"><i class="fa-brands fa-x-twitter" aria-hidden="true"></i></a>
+                </div>
+              </nav>
+            </div>
+          </article>
+        </div>
+        <div class="box">
+          <article class="media">
+            <figure class="media-left">
+              <p class="image is-64x64">
+                <img src="/images/ruben.jpg" />
+              </p>
+            </figure>
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <strong>Ruben Cranmer</strong><br/><small><strong>Previous Customer</strong></small>
+                  <br />
+                  He is a hard worker who never misses a deadline and gets jobs done quickly.
+                </p>
+              </div>
+              <nav class="level is-mobile">
+                <div class="level-left">
+                  <a href="https://discord.com/users/862199721585934356" target="_blank"><i class="fa-brands fa-discord" aria-hidden="true"></i></a>
+                </div>
+              </nav>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p class="title" style="margin-bottom: 10px;">🌐</p>
+        <p class="subtitle">
+          My website is open source and is available at the GitHub repository <a href="https://github.com/Edward-Deakin/Portfolio" target="_blank">Edward-Deakin/Portfolio</a>.<br />Attribution is not necessary but appreciated.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

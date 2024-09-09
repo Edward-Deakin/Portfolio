@@ -4,12 +4,19 @@ zerops:
       base: nodejs@20
       buildCommands:
         - npm i
-      deploy:
-        - node_modules
+      deployFiles:
         - public
         - views
         - index.js
         - package-lock.json
         - package.json
+        - node_modules
     run:
+      base: nodejs@20
+      os: ubuntu
       start: node index.js
+      ports:
+        - port: 3200
+          httpSupport: true
+      routing:
+        root: /
