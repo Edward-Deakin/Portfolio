@@ -44,15 +44,12 @@
             <a class="button is-rounded" href="{{ url_for('static', filename='/pdfs/EdwardDeakinsCV.pdf')}}" target="_blank"><i class="fa-solid fa-eye"></i>&nbsp;View CV</a>
           </div>
           <br>
-          <div class="columns is-multiline">
-            <div class="column is-4"></div>
+          <div class="columns is-multiline is-mobile">
+            <div class="column is-12-mobile is-4-desktop">
               <div class="card">
                 <div class="card-image">
                   <figure class="image">
-                    <img
-                      src="{{url_for('static', filename='images/harry.png')}}"
-                      alt="Harry Lucas"
-                    />
+                    <img src="{{ url_for('static', filename='images/harry.png') }}" alt="Harry Lucas" />
                   </figure>
                 </div>
                 <div class="card-content">
@@ -62,21 +59,17 @@
                       <p class="subtitle is-6">Cofounder and CTO at <a href="https://www.phas.io/" target="_blank">Phasio</a></p>
                     </div>
                   </div>
-              
                   <div class="content">
-                    As a true digital native, he is well prepared for the modern world of work which is more decentalized and technically specialized than ever before.
+                    As a true digital native, he is well prepared for the modern world of work which is more decentralized and technically specialized than ever before.
                   </div>
                 </div>
               </div>
             </div>
-            <div class="column is-4"></div>
+            <div class="column is-12-mobile is-4-desktop">
               <div class="card">
                 <div class="card-image">
                   <figure class="image">
-                    <img
-                      src="{{ url_for('static', filename='images/ales.png')}}"
-                      alt="Ales Rechtorik"
-                    />
+                    <img src="{{ url_for('static', filename='images/ales.png') }}" alt="Ales Rechtorik" />
                   </figure>
                 </div>
                 <div class="card-content">
@@ -86,21 +79,17 @@
                       <p class="subtitle is-6">Product Owner of <a href="https://zerops.io/">Zerops</a></p>
                     </div>
                   </div>
-              
                   <div class="content">
                     Edward has demonstrated excellent general knowledge about programming and good common sense, as well as the ability to create applications beyond what I would expect from someone of his age.
                   </div>
                 </div>
               </div>
             </div>
-            <div class="column is-4"></div>
+            <div class="column is-12-mobile is-4-desktop">
               <div class="card">
                 <div class="card-image">
                   <figure class="image">
-                    <img
-                      src="{{ url_for('static', filename='images/ruben.png')}}"
-                      alt="Ruben Cranmer"
-                    />
+                    <img src="{{ url_for('static', filename='images/ruben.png') }}" alt="Ruben Cranmer" />
                   </figure>
                 </div>
                 <div class="card-content">
@@ -110,15 +99,14 @@
                       <p class="subtitle is-6">Previous Customer</p>
                     </div>
                   </div>
-              
                   <div class="content">
                     He is a hard worker who never misses a deadline and gets jobs done quickly.
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </div> 
+        </div>         
       </div>
     </section>
   </body>
