@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Edward Deakin</title>
+    <meta property="og:title" content="Edward Deakin" />
+    <meta property="og:description" content="Developer" />
+    <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='images/profilepicture.png') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/fontawesome.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/solid.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/brands.css') }}">
+    <script src="{{ url_for('static', filename='js/time.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/loaded.js') }}"></script>
+  </head>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC50XWN4WK"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PC50XWN4WK')
+  </script>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container has-text-centered">
+          <figure class="image is-128x128 is-inline-block">
+            <img src="{{ url_for('static', filename='/images/profilepicture.png')}}" alt="Profile Picture">
+          </figure>
+          <h1 class="title is-4">Edward Deakin</h1>
+          <h2 class="subtitle is-5">A-Level Student<br>Software Developer<br><br><i class="fa-brands fa-js"></i>&nbsp;<i class="fa-brands fa-html5"></i>&nbsp;<i class="fa-brands fa-css3-alt"></i>&nbsp;<i class="fa-brands fa-python"></i></h2>
+          <p><b>I've always been passionate about technology and programming since a young age.<br>My journey started with ASP.NET in Visual Studio, thanks to the guidance of my older <a href="https://www.linkedin.com/in/harry-conor-lucas/" target="_blank">relative</a>.<br> Today, I aspire to become a software engineer at a startup, where I can build impactful software that improves people's lives.</b></p>
+          <br>
+          <div class="buttons is-centered">
+            <a class="button is-rounded" href="mailto:deakinedward53@outlook.com" target="_blank"><i class="fa-solid fa-envelope"></i>&nbsp;Email</a>
+            <a class="button is-rounded" href="https://github.com/Edward-Deakin" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;GitHub</a>
+            <a class="button is-rounded" href="https://discord.com/users/361479100004564995" target="_blank"><i class="fa-brands fa-discord"></i>&nbsp;Discord</a>
+            <a class="button is-rounded" href="https://www.linkedin.com/in/edward-deakin-0a4021319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a>
+          </div>
+          <div class="buttons is-centered">
+            <a class="button is-rounded" href="{{ url_for('static', filename='/pdfs/EdwardDeakinsCV.pdf')}}" target="_blank"><i class="fa-solid fa-eye"></i>&nbsp;View CV</a>
+          </div>
+          <br>
+          <div class="columns">
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img
+                      src="{{url_for('static', filename='images/harry.png')}}"
+                      alt="Harry Lucas"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Harry Lucas</p>
+                      <p class="subtitle is-6">Cofounder and CTO at <a href="https://www.phas.io/" target="_blank">Phasio</a></p>
+                    </div>
+                  </div>
+              
+                  <div class="content">
+                    As a true digital native, he is well prepared for the modern world of work which is more decentalized and technically specialized than ever before.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img
+                      src="{{ url_for('static', filename='images/ales.png')}}"
+                      alt="Ales Rechtorik"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Ales Rechtorik</p>
+                      <p class="subtitle is-6">Product Owner of <a href="https://zerops.io/">Zerops</a></p>
+                    </div>
+                  </div>
+              
+                  <div class="content">
+                    Edward has demonstrated excellent general knowledge about programming and good common sense, as well as the ability to create applications beyond what I would expect from someone of his age.
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column">
+              <div class="card">
+                <div class="card-image">
+                  <figure class="image">
+                    <img
+                      src="{{ url_for('static', filename='images/ruben.png')}}"
+                      alt="Ruben Cranmer"
+                    />
+                  </figure>
+                </div>
+                <div class="card-content">
+                  <div class="media">
+                    <div class="media-content">
+                      <p class="title is-4">Ruben Cranmer</p>
+                      <p class="subtitle is-6">Previous Customer</p>
+                    </div>
+                  </div>
+              
+                  <div class="content">
+                    He is a hard worker who never misses a deadline and gets jobs done quickly.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
