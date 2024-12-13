@@ -2,12 +2,12 @@ zerops:
   - setup: python0
     build:
       base: python@3.12
-      deployFiles: app.py, templates, static
+      deployFiles: [app.py, templates, static]
     run:
       base: python@3.12
       prepareCommands:
         - pip install flask gunicorn
       ports:
-        - port: 5000
+        - port: 3200
           httpSupport: true
       start: gunicorn --bind 0.0.0.0:3200 app:app
