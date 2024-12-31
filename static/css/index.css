@@ -1,25 +1,20 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 .betterParagraphs {
     font-size: 18px;
     line-height: 1.75;
     max-width: 600px;
-    margin: auto;
+    margin: 10px;
 }
 
-.columns {
-    display: flex;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .card-content {
-    flex: 1;
-  }
+.image.is-128x128 {
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .image.is-128x128 {
+      display: none;
+    }
+}

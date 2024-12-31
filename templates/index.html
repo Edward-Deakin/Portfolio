@@ -12,8 +12,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/fontawesome.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/solid.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='fontawesome/css/brands.css') }}">
-    <script src="{{ url_for('static', filename='js/time.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/loaded.js') }}"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC50XWN4WK"></script>
   <script>
@@ -24,92 +23,108 @@
   gtag('config', 'G-PC50XWN4WK')
   </script>
   <body>
-    <section class="hero">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <figure class="image is-128x128 is-inline-block">
-            <img src="{{ url_for('static', filename='/images/profilepicture.png')}}" alt="Profile Picture">
+    <section class="section">
+      <div class="container">
+        <div class="columns" style="margin-top: 5%">
+          <div class="column">
+            <h1 class="title">
+              Edward Deakin
+            </h1>
+            <p class="subtitle is-size-6">
+              A-Level Student<br>
+                Software Developer<br>
+              <div class="buttons">
+                <div class="button">View CV</div>
+                <div class="button">PlatformPredict</div>
+              </div>
+              <div class="buttons">
+                <div class="button"><i class="fa-solid fa-envelope"></i></div>
+                <div class="button"><i class="fa-brands fa-github"></i></div>
+                <div class="button"><i class="fa-brands fa-discord"></i></div>
+                <div class="button"><i class="fa-brands fa-linkedin-in"></i></div>
+              </div>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section" style="padding-top: 5px;">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <p class="subtitle isBetterParagraphs">
+              I've always been passionate about technology and programming since a young age.<br/>
+              My journey started with ASP.NET in Visual Studio, thanks to the guidance of my <a href="https://www.linkedin.com/in/harry-conor-lucas/" target="_blank">older relative.</a><br/>
+              Today, I aspire to become a software engineer at a startup, where I can build impactful software that improves people's lives.<br/><br/>
+              I am currently working on a free, 24/7 platform called <a href="https://platformpredict.co.uk" target="_blank">PlatformPredict</a> which provides fast, accurate train information - sometimes beating the departure boards themselves!<br/><br/>
+              I am also currently volunteering for the <a href="https://salvationarmytrading.org.uk/" target="_blank">Salvation Army Trading Company</a> assisting in a retail space coordinating inventory alongside working with their team and customers on tills.
+            </p>
+          </div>
+        </div>
+        <br/>
+        <div class="columns">
+          <div class="column is-one-third">
+            <div class="box" style="box-shadow: none; border: 1px solid #353a46; height: 100%;">
+              <article class="media">
+          <figure class="media-left">
+            <p class="image is-64x64">
+              <img class="is-rounded" src="{{ url_for('static', filename='images/harry.png') }}" alt="Harry Lucas">
+            </p>
           </figure>
-          <h1 class="title is-4">Edward Deakin</h1>
-          <h2 class="subtitle is-5">A-Level Student<br>Software Developer<br><br><i class="fa-brands fa-js"></i>&nbsp;<i class="fa-brands fa-html5"></i>&nbsp;<i class="fa-brands fa-css3-alt"></i>&nbsp;<i class="fa-brands fa-python"></i></h2>
-          <p><b>I've always been passionate about technology and programming since a young age.<br>My journey started with ASP.NET in Visual Studio, thanks to the guidance of my older <a href="https://www.linkedin.com/in/harry-conor-lucas/" target="_blank">relative</a>.<br> Today, I aspire to become a software engineer at a startup, where I can build impactful software that improves people's lives.</b></p>
-          <br>
-          <div class="buttons is-centered">
-            <a class="button is-rounded" href="mailto:deakinedward53@outlook.com" target="_blank"><i class="fa-solid fa-envelope"></i>&nbsp;Email</a>
-            <a class="button is-rounded" href="https://github.com/Edward-Deakin" target="_blank"><i class="fa-brands fa-github"></i>&nbsp;GitHub</a>
-            <a class="button is-rounded" href="https://discord.com/users/361479100004564995" target="_blank"><i class="fa-brands fa-discord"></i>&nbsp;Discord</a>
-            <a class="button is-rounded" href="https://www.linkedin.com/in/edward-deakin-0a4021319?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a>
-          </div>
-          <div class="buttons is-centered">
-            <a class="button is-rounded" href="{{ url_for('static', filename='/pdfs/EdwardDeakinsCV.pdf')}}" target="_blank"><i class="fa-solid fa-eye"></i>&nbsp;View CV</a>
-          </div>
-          <div class="buttons is-centered">
-            <a class="button is-rounded" href="https://platformpredict.co.uk" target="_blank"><i class="fa-solid fa-wrench"></i>&nbsp;Work In Progress: PlatformPredict</a>
-          </div>
-          <br>
-          <div class="columns is-multiline is-mobile">
-            <div class="column is-12-mobile is-4-desktop">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img src="{{ url_for('static', filename='images/harry.png') }}" alt="Harry Lucas" />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title is-4">Harry Lucas</p>
-                      <p class="subtitle is-6">Cofounder and CTO at <a href="https://www.phas.io/" target="_blank">Phasio</a></p>
-                    </div>
-                  </div>
-                  <div class="content">
-                    As a true digital native, he is well prepared for the modern world of work which is more decentralized and technically specialized than ever before.
-                  </div>
-                </div>
-              </div>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Harry Lucas</strong><br>
+                Cofounder and CTO at <a href="https://phas.io" target="_blank">Phasio</a><br/><br/>
+                "As a true digital native, he is well prepared for the modern world of work which is more decentralized and technically specialized than ever before."
+              </p>
             </div>
-            <div class="column is-12-mobile is-4-desktop">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img src="{{ url_for('static', filename='images/ales.png') }}" alt="Ales Rechtorik" />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title is-4">Ales Rechtorik</p>
-                      <p class="subtitle is-6">Product Owner of <a href="https://zerops.io/">Zerops</a></p>
-                    </div>
-                  </div>
-                  <div class="content">
-                    Edward has demonstrated excellent general knowledge about programming and good common sense, as well as the ability to create applications beyond what I would expect from someone of his age.
-                  </div>
-                </div>
-              </div>
+          </div>
+              </article>
             </div>
-            <div class="column is-12-mobile is-4-desktop">
-              <div class="card">
-                <div class="card-image">
-                  <figure class="image">
-                    <img src="{{ url_for('static', filename='images/ruben.png') }}" alt="Ruben Cranmer" />
-                  </figure>
-                </div>
-                <div class="card-content">
-                  <div class="media">
-                    <div class="media-content">
-                      <p class="title is-4">Ruben Cranmer</p>
-                      <p class="subtitle is-6">Previous Customer</p>
-                    </div>
-                  </div>
-                  <div class="content">
-                    He is a hard worker who never misses a deadline and gets jobs done quickly.
-                  </div>
-                </div>
-              </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="box" style="box-shadow: none; border: 1px solid #353a46; height: 100%;">
+              <article class="media">
+          <figure class="media-left">
+            <p class="image is-64x64 is-rounded">
+              <img class="is-rounded" src="{{ url_for('static', filename='images/ales.png') }}" alt="Ales Rechtorik">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Ales Rechtorik</strong><br>
+                Product Owner of <a href="https://zerops.io" target="_blank">Zerops</a><br/><br/>
+                "Edward has demonstrated excellent general knowledge about programming and good common sense, as well as the ability to create applications beyond what I would expect from someone of his age."
+              </p>
             </div>
-          </div> 
-        </div>         
+          </div>
+              </article>
+            </div>
+          </div>
+          <div class="column is-one-third">
+            <div class="box" style="box-shadow: none; border: 1px solid #353a46; height: 100%;">
+              <article class="media">
+          <figure class="media-left">
+            <p class="image is-64x64 is-rounded">
+              <img class="is-rounded" src="{{ url_for('static', filename='images/ruben.png') }}" alt="Ruben Cranmer">
+            </p>
+          </figure>
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <strong>Ruben Cranmer</strong><br>
+                Previous Customer<br/><br/>
+                "He is a hard worker who never misses a deadline and gets jobs done quickly."
+              </p>
+            </div>
+          </div>
+              </article>
+            </div>
+          </div>
+        </div>
+        </div>
       </div>
     </section>
   </body>
