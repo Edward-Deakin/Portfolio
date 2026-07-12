@@ -1,12 +1,14 @@
 zerops:
-  - setup: python0
+  - setup: python
     build:
-      base: python@3.12
+      base: alpine/python@3.12
       deployFiles: [app.py, templates, static]
+      addToRunPrepare:
+        - requirements.txt
     run:
-      base: python@3.12
+      base: alpine/python@3.12
       prepareCommands:
-        - pip install flask gunicorn
+        - python3 -m pip install flask gunicorn
       ports:
         - port: 3200
           httpSupport: true
