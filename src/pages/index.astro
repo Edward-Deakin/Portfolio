@@ -1,24 +1,50 @@
 ---
-// src/pages/index.astro
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { Button } from '../components/ui/button';
 import ProjectCard from '../components/ProjectCard';
+import ProfileAvatar from '../components/ProfileAvatar';
+import SocialButton from '../components/SocialButton';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faEnvelope, faEye} from '@fortawesome/free-solid-svg-icons';
 ---
 <BaseLayout title="Edward Deakin — Portfolio">
-	<main class="max-w-3xl mx-auto px-6 py-16">
-		<section class="mb-12">
-			<h1 class="text-4xl font-bold mb-2">Edward Deakin</h1>
-			<p class="text-muted-foreground"></p>
-		</section>
+    <main class="max-w-3xl mx-auto px-6 py-16">
+        <section class="mb-12 flex flex-col items-center text-center">
+            <ProfileAvatar
+                    client:load
+                    src="/avatar.jpg"
+                    fallback="ED"
+                    className="h-30 w-30 text-3xl mb-4">
 
-		<section class="grid gap-6">
-			<ProjectCard
-				client:visible
-				title="Portfolio Notice"
-				description="Thank you for visiting my portfolio, I am currently in the process of redoing this entire website so it can use a more modern project setup. If you would like to get in contact with me about any of my work, please contact me through LinkedIn. Thank you :)"
-				link="https://github.com/Edward-Deakin/Portfolio"
-			/>
-			{/* more ProjectCards for Phasio internship, etc */}
-		</section>
-	</main>
+            </ProfileAvatar>
+            <h1 class="text-3xl font-bold mb-2">Edward Deakin</h1>
+            <p class="text-muted-foreground mb-4">Aspiring Software Engineer &middot; Lancaster University Offer
+                Holder</p>
+            <a
+                    href="/cv.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 text-sm font-medium rounded-md px-3 py-1.5 !border !border-gray-300 dark:!border-gray-700 hover:bg-accent hover:text-accent-foreground transition-colors no-underline"
+            >
+                <FontAwesomeIcon client:load icon={faEye}/>
+                View CV
+            </a>
+
+            <div class="flex gap-2 mt-4">
+                <SocialButton client:load href="https://github.com/Edward-Deakin" icon={faGithub} label="GitHub"/>
+                <SocialButton client:load href="https://linkedin.com/in/your-profile" icon={faLinkedin}
+                              label="LinkedIn"/>
+                <SocialButton client:load href="mailto:you@example.com" icon={faEnvelope} label="Email"/>
+            </div>
+        </section>
+
+        <section class="grid gap-6">
+            <ProjectCard
+                    client:visible
+                    title="Portfolio Notice"
+                    description="Thank you for visiting my portfolio, I am currently in the process of redoing this entire website so it can use a more modern project setup. If you would like to get in contact with me about any of my work, please contact me through LinkedIn. Thank you :)"
+                    link="https://github.com/Edward-Deakin/Portfolio"
+            />
+        </section>
+    </main>
 </BaseLayout>
