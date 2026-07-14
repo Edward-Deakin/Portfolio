@@ -3,8 +3,6 @@ zerops:
     build:
       base: alpine/python@3.12
       deployFiles: [app.py, templates, static]
-      addToRunPrepare:
-        - requirements.txt
     run:
       base: alpine/python@3.12
       prepareCommands:

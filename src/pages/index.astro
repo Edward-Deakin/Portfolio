@@ -1,0 +1,24 @@
+---
+// src/pages/index.astro
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { Button } from '../components/ui/button';
+import ProjectCard from '../components/ProjectCard';
+---
+<BaseLayout title="Edward Deakin — Portfolio">
+	<main class="max-w-3xl mx-auto px-6 py-16">
+		<section class="mb-12">
+			<h1 class="text-4xl font-bold mb-2">Edward Deakin</h1>
+			<p class="text-muted-foreground"></p>
+		</section>
+
+		<section class="grid gap-6">
+			<ProjectCard
+				client:visible
+				title="Portfolio Notice"
+				description="Thank you for visiting my portfolio, I am currently in the process of redoing this entire website so it can use a more modern project setup. If you would like to get in contact with me about any of my work, please use the social medias below. Thank you :)"
+				link="https://platformpredict.co.uk"
+			/>
+			{/* more ProjectCards for Phasio internship, etc */}
+		</section>
+	</main>
+</BaseLayout>
