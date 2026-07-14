@@ -4,7 +4,7 @@ import ProjectCard from '../components/ProjectCard';
 import ProfileAvatar from '../components/ProfileAvatar';
 import SocialButton from '../components/SocialButton';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faGithub, faLinkedin} from '@fortawesome/free-brands-svg-icons';
+import {faGithub, faLinkedin, faDiscord} from '@fortawesome/free-brands-svg-icons';
 import {faEnvelope, faEye} from '@fortawesome/free-solid-svg-icons';
 ---
 <BaseLayout title="Edward Deakin — Portfolio">
@@ -32,9 +32,11 @@ import {faEnvelope, faEye} from '@fortawesome/free-solid-svg-icons';
 
             <div class="flex gap-2 mt-4">
                 <SocialButton client:load href="https://github.com/Edward-Deakin" icon={faGithub} label="GitHub"/>
-                <SocialButton client:load href="https://linkedin.com/in/your-profile" icon={faLinkedin}
+                <SocialButton client:load href="https://linkedin.com/in/edward-deakin" icon={faLinkedin}
                               label="LinkedIn"/>
-                <SocialButton client:load href="mailto:you@example.com" icon={faEnvelope} label="Email"/>
+                <SocialButton client:load href="https://discord.com/users/361479100004564995" icon={faDiscord}
+                              label="Discord"/>
+                <SocialButton client:load href="mailto:deakinedward53@outlook.com" icon={faEnvelope} label="Email"/>
             </div>
         </section>
 
