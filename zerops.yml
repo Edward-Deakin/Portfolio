@@ -1,13 +1,14 @@
 zerops:
-  - setup: python
+  - setup: static
     build:
-      base: alpine/python@3.12
-      deployFiles: [app.py, templates, static]
+      base: nodejs@20
+      buildCommands:
+        - npm i
+        - npm run build
+      deployFiles:
+        - dist/~
+      cache:
+        - node_modules
+        - package-lock.json
     run:
-      base: alpine/python@3.12
-      prepareCommands:
-        - python3 -m pip install flask gunicorn
-      ports:
-        - port: 3200
-          httpSupport: true
-      start: gunicorn --bind 0.0.0.0:3200 app:app
+      base: static
