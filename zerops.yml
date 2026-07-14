@@ -1,7 +1,7 @@
 zerops:
   - setup: static
     build:
-      base: nodejs@22.12.0
+      base: nodejs@22
       buildCommands:
         - npm i
         - npm run build
