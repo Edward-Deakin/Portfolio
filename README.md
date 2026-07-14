@@ -1,12 +1,7 @@
 # Portfolio
 
-Thank you for taking interest in the code of my portfolio!
-
-This has been made with a Gunicorn and Flask Python backend using the Bulma CSS framework.
-
-This code is free to use and take to your own discretion, however attribution is appreciated (even though it is not required).
-
-The live version of this website is at [https://edwarddeakin.uk](https://edwarddeakin.uk)
-
-
-![Portfolio Screenshot](https://edwarddeakin.uk/static/images/webScreenshot.jpeg)
+I am currently in the process of redoing my portfolio.<BR/>
+This version will be using Astro and clean swiss design from ShadcnUI.</BR>
+If you would like to get in contact with me about this work, please contact me on LinkedIn.
+<BR/><BR/>
+Thank you for taking interest. :)
