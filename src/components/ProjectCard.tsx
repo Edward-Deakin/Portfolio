@@ -20,9 +20,11 @@ export default function ProjectCard({ title, description, link, tags = [] }: Pro
                 <div className="flex gap-2 mb-3 flex-wrap">
                     {tags.map((tag) => <Badge key={tag} variant="secondary">{tag}</Badge>)}
                 </div>
-                <a href={link} target="_blank" rel="noopener noreferrer" className="text-sm underline">
-                    View project →
-                </a>
+                {link !== '#' && (
+                    <a href={link} target="_blank" rel="noopener noreferrer" className="text-sm underline">
+                        View project →
+                    </a>
+                )}
             </CardContent>
         </Card>
     );

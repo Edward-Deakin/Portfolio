@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 import ProjectCard from '../components/ProjectCard';
+import ProjectCarousel from '../components/ProjectCarousel';
 import ProfileAvatar from '../components/ProfileAvatar';
 import SocialButton from '../components/SocialButton';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
@@ -14,8 +15,8 @@ import {faEnvelope, faEye} from '@fortawesome/free-solid-svg-icons';
                     client:load
                     src="/avatar.jpg"
                     fallback="ED"
+                    alt="ED"
                     className="h-30 w-30 text-3xl mb-4">
-
             </ProfileAvatar>
             <h1 class="text-3xl font-bold mb-2">Edward Deakin</h1>
             <p class="text-muted-foreground mb-4">Aspiring Software Engineer &middot; Lancaster University Offer
@@ -26,17 +27,15 @@ import {faEnvelope, faEye} from '@fortawesome/free-solid-svg-icons';
                     rel="noopener noreferrer"
                     class="inline-flex items-center justify-center gap-2 text-sm font-medium rounded-md px-3 py-1.5 !border !border-gray-300 dark:!border-gray-700 hover:bg-accent hover:text-accent-foreground transition-colors no-underline"
             >
-                <FontAwesomeIcon client:load icon={faEye}/>
+                <FontAwesomeIcon icon={faEye} className="size-4"/>
                 View CV
             </a>
 
             <div class="flex gap-2 mt-4">
-                <SocialButton client:load href="https://github.com/Edward-Deakin" icon={faGithub} label="GitHub"/>
-                <SocialButton client:load href="https://linkedin.com/in/edward-deakin" icon={faLinkedin}
-                              label="LinkedIn"/>
-                <SocialButton client:load href="https://discord.com/users/361479100004564995" icon={faDiscord}
-                              label="Discord"/>
-                <SocialButton client:load href="mailto:deakinedward53@outlook.com" icon={faEnvelope} label="Email"/>
+                <SocialButton href="https://github.com/Edward-Deakin" icon={faGithub} label="GitHub"/>
+                <SocialButton href="https://linkedin.com/in/edward-deakin" icon={faLinkedin} label="LinkedIn"/>
+                <SocialButton href="https://discord.com/users/361479100004564995" icon={faDiscord} label="Discord"/>
+                <SocialButton href="mailto:deakinedward53@outlook.com" icon={faEnvelope} label="Email"/>
             </div>
         </section>
 
@@ -45,7 +44,20 @@ import {faEnvelope, faEye} from '@fortawesome/free-solid-svg-icons';
                     client:visible
                     title="Portfolio Notice"
                     description="Thank you for visiting my portfolio, I am currently in the process of redoing this entire website so it can use a more modern project setup. If you would like to get in contact with me about any of my work, please contact me through LinkedIn. Thank you :)"
-                    link="https://github.com/Edward-Deakin/Portfolio"
+                    link="#"
+            />
+        </section>
+
+        <section class="mt-6">
+            <h2 class="text-xl font-semibold mb-4">My Projects</h2>
+            <ProjectCarousel
+                    client:visible
+                    projects={[
+                        {title: "PlatformPredict", description: "A live train departure board using staff-exclusive data", link: "#", tags: ["🚧 WIP"]},
+                        {title: "TheyChat", description: "A secure self-hosted web chat application", link: "#", tags: ["📚 NEA"]},
+                        {title: "Portfolio Website", description: "A website about me - you are already on it!", link: "https://github.com/Edward-Deakin/Portfolio", tags: ["Public via GitHub"]},
+                        {title: "Live Bus Map", description: "A live map of all UK trackable buses", link: "#"},
+                    ]}
             />
         </section>
     </main>
