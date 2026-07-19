@@ -27,3 +27,7 @@ cd portfolio
 npm install
 npm run dev
 ```
+
+## Image of Live Site
+
+![Live Site](https://edwarddeakin.uk/githubScreenshot.png)
