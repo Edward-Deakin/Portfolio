@@ -18,7 +18,7 @@ export default function ProjectCarousel({ projects }: Props) {
         <Carousel opts={{ align: 'start' }} className="w-full">
             <CarouselContent>
                 {projects.map((project) => (
-                    <CarouselItem key={project.title} className="basis-full sm:basis-1/2 lg:basis-1/3">
+                    <CarouselItem key={project.title} className="basis-full sm:basis-1/2 lg:basis-1/3 h-auto">
                         <ProjectCard {...project} />
                     </CarouselItem>
                 ))}

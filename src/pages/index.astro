@@ -12,7 +12,7 @@ import {faEnvelope, faEye} from '@fortawesome/free-solid-svg-icons';
     <main class="max-w-3xl mx-auto px-6 py-16">
         <section class="mb-12 flex flex-col items-center text-center">
             <ProfileAvatar
-                    client:load
+                  client:load
                     src="/avatar.jpg"
                     fallback="ED"
                     alt="ED"
@@ -39,17 +39,16 @@ import {faEnvelope, faEye} from '@fortawesome/free-solid-svg-icons';
             </div>
         </section>
 
-        <section class="grid gap-6">
-            <ProjectCard
-                    client:visible
-                    title="Portfolio Notice"
-                    description="Thank you for visiting my portfolio, I am currently in the process of redoing this entire website so it can use a more modern project setup. If you would like to get in contact with me about any of my work, please contact me through LinkedIn. Thank you :)"
-                    link="#"
-            />
+        <section class="mt-6">
+            <h2 class="text-xl font-semibold mb-4">About Me</h2>
+            <p class="text-muted-foreground mb-4">I've always been passionate about technology and programming since a young age.
+                My journey started with ASP.NET in Visual Studio, thanks to the guidance of my <u><a href="http://web.archive.org/web/20250325084006/https://www.linkedin.com/in/harry-conor-lucas/" target="_blank">older relative</a></u>.
+                Today, I aspire to become a software engineer at a startup, where I can build impactful software that improves people's lives.</p>
         </section>
 
         <section class="mt-6">
             <h2 class="text-xl font-semibold mb-4">My Projects</h2>
+            <p class="text-muted-foreground mb-4">You can use the arrows or scroll horizontally to view my other projects</p>
             <ProjectCarousel
                     client:visible
                     projects={[

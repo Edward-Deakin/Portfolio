@@ -1,5 +1,6 @@
 // src/components/SocialButton.tsx
 import {buttonVariants} from "@/components/ui/button";
+import {cn} from "@/lib/utils";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import type {IconDefinition} from '@fortawesome/fontawesome-svg-core';
 
@@ -18,10 +19,10 @@ export default function SocialButton({href, icon, label, variant = "outline", si
             target="_blank"
             rel="noopener noreferrer"
             aria-label={label}
-            className={`${buttonVariants({
-                variant,
-                size
-            })} !border !border-gray-300 dark:!border-gray-700 hover:bg-accent hover:text-accent-foreground transition-colors no-underline`}
+            className={cn(
+                buttonVariants({variant, size}),
+                "border-gray-300 dark:border-gray-700 hover:bg-accent hover:text-accent-foreground transition-colors no-underline"
+            )}
         >
             <FontAwesomeIcon icon={icon}/>
         </a>

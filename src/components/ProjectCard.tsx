@@ -11,12 +11,12 @@ type Props = {
 
 export default function ProjectCard({ title, description, link, tags = [] }: Props) {
     return (
-        <Card>
+        <Card className="h-full flex flex-col">
             <CardHeader>
                 <CardTitle>{title}</CardTitle>
                 <CardDescription>{description}</CardDescription>
             </CardHeader>
-            <CardContent>
+            <CardContent className="flex flex-col flex-1 justify-end">
                 <div className="flex gap-2 mb-3 flex-wrap">
                     {tags.map((tag) => <Badge key={tag} variant="secondary">{tag}</Badge>)}
                 </div>
