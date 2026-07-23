@@ -1,6 +1,6 @@
 # My Portfolio
 
-My personal portfolio designed around clean Swiss aesthetic.
+My personal portfolio designed around clean Swiss aesthetic
 
 🔗 **Live @** [edwarddeakin.uk](https://edwarddeakin.uk)
 
@@ -27,6 +27,8 @@ cd portfolio
 npm install
 npm run dev
 ```
+
+The local deployment will initially include details from my portfolio, please remember to change the details to yours.
 
 ## Image of Live Site
 
