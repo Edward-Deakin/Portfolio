@@ -128,3 +128,18 @@
     @apply font-sans;
     }
 }
+
+body {
+    background-color: var(--background);
+    background-image:
+        radial-gradient(60rem 40rem at 8% -10%, oklch(0.55 0.12 250 / 24%), transparent 60%),
+        radial-gradient(50rem 35rem at 100% 20%, oklch(0.65 0.1 30 / 20%), transparent 60%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.dark body {
+    background-image:
+        radial-gradient(60rem 40rem at 8% -10%, oklch(0.55 0.15 250 / 34%), transparent 60%),
+        radial-gradient(50rem 35rem at 100% 20%, oklch(0.6 0.13 30 / 28%), transparent 60%);
+}
